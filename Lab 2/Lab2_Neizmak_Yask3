@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>ТушяьфлLab03-3</title>
+    <style>
+        body {
+            background-color: #f2f0ff;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #2e1b47;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #4b2e83;
+            margin-bottom: 30px;
+        }
+
+        .photo-block {
+            display: inline-block;
+            margin: 50px;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        p {
+            font-style: italic;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Фото на заставку в ігри</h1>
+
+    <div class="photo-block">
+        <img src="photo1.jpg" alt="Фото з університету" border="2" height="350" width="300">
+        <p>Ідея фото на заставку</p>
+    </div>
+
+    <div class="photo-block">
+        <img src="photo2.jpg" alt="Фото з друзями" border="2" height="350" width="350">
+        <p>Фото для гри</p>
+    </div>
+
+    <div class="photo-block">
+        <img src="photo3.jpg" alt="Пейзаж міста" border="2" height="350" width="350">
+        <p>Обої для телефону</p>
+    </div>
+
+</body>
+</html>

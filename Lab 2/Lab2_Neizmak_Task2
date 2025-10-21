@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Наша група 303-ТН</title>
+
+    <style>
+        body {
+            
+            background-image: url("Photo.jpg");
+            background-size: cover; /* зображення на весь екран */
+            background-attachment: fixed; /* фіксоване під час прокрутки */
+            background-position: center;
+            background-repeat: no-repeat;
+
+            color: #2e1b47;
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 40px;
+            text-align: justify;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #4d2c8c;
+            background-color: rgba(255, 255, 255, 0.75);
+            padding: 10px 20px;
+            border-radius: 12px;
+            display: inline-block;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: large;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 15px 20px;
+            border-radius: 12px;
+            line-height: 1.6;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .signature {
+            text-align: right;
+            font-style: italic;
+            margin-top: 40px;
+            background-color: rgba(255, 255, 255, 0.75);
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Наша група 303-ТН</h1>
+
+    <p>
+        Ми навчаємося в <b>Полтавській політехніці імені Юрія Кондратюка</b> 
+        за спеціальністю <u>Комп'ютерні науки</u>. 
+        Наша група складається з <b>23 студентів</b>. 
+        Серед нас є лише три дівчинки — <b>Катя</b>, <b>Маша</b> і <b>Софія</b>.
+    </p>
+
+    <p>
+        Ми — дружна команда, яку об’єднує спільна мета: 
+        стати кваліфікованими фахівцями у сфері ІТ. 
+        На парах завжди допомагаємо одне одному, 
+        а у вільний час разом відпочиваємо, 
+        обговорюємо нові технології, фільми та ідеї для проєктів.
+    </p>
+
+    <h2>Наша атмосфера</h2>
+    <p>
+        Ми цінуємо взаємопідтримку, гумор і повагу. 
+        Кожен із нас — особистість, але разом ми створюємо справжню 
+        <b>команду однодумців</b>. 
+        Попереду ще багато цікавих предметів, лабораторних і викликів, 
+        але ми впевнені, що впораємося з усім 
+    </p>
+
+    <div class="signature">
+        Студентка групи 303-ТН <b><u>Неїжмак К.О.</u></b>
+    </div>
+</body>
+</html>
