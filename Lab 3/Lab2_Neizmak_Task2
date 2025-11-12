@@ -8,8 +8,8 @@
         body {
             
             background-image: url("Photo.jpg");
-            background-size: cover; /* зображення на весь екран */
-            background-attachment: fixed; /* фіксоване під час прокрутки */
+            background-size: cover; 
+            background-attachment: fixed; 
             background-position: center;
             background-repeat: no-repeat;
 

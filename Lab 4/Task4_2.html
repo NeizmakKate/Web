@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>NeizhmakLab04-3.htm</title>
+  <style>
+    body {
+      background-color: #f9f7ff;
+      color: #3b2a59;
+      font-family: "Segoe UI", Arial, sans-serif;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin: 10px;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .row {
+      position: relative;
+      height: 200px; /* 🔹 збільшена область */
+      background: linear-gradient(180deg, #e8ddff, #dcd2ff);
+      border-radius: 12px;
+      border: 1px solid #bfa8ff;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+      height: 120px;
+      border-radius: 10px;
+    }
+
+    
+    .bounce {
+      position: absolute;
+      animation: bounce 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-80px); } 
+    }
+
+    
+    .up {
+      position: absolute;
+      animation: moveUp 4s linear infinite;
+    }
+
+    @keyframes moveUp {
+      0% { top: 200px; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { top: -150px; opacity: 0; }
+    }
+
+    
+    .down-loop {
+      position: absolute;
+      animation: moveDownLoop 4s linear infinite;
+    }
+
+    @keyframes moveDownLoop {
+      0% { top: -150px; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { top: 200px; opacity: 0; }
+    }
+
+ 
+    .slow-up {
+      position: absolute;
+      animation: slowUp 8s linear infinite;
+    }
+
+    @keyframes slowUp {
+      0% { top: 200px; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { top: -150px; opacity: 0; }
+    }
+
+   
+    .fast-down {
+      position: absolute;
+      animation: fastDown 2s linear infinite;
+    }
+
+    @keyframes fastDown {
+      0% { top: -150px; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { top: 200px; opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Лабораторна №4</h1>
+  <h2>Вертикальні рухомі рядки</h2>
+
+  <div class="container">
+
+   
+    <div class="row">
+      <div class="bounce">Текст коливається вгору і вниз</div>
+    </div>
+
+  
+    <div class="row">
+      <img src="1.jpg" alt="Фото 1" class="up">
+    </div>
+
+    
+    <div class="row">
+      <img src="2.jpg" alt="Фото 2" class="down-loop">
+    </div>
+
+ 
+    <div class="row">
+      <div class="slow-up">Повільний рух тексту вгору</div>
+    </div>
+
+    
+    <div class="row">
+      <div class="fast-down">Швидкий рух тексту вниз</div>
+    </div>
+
+  </div>
+</body>
+</html>

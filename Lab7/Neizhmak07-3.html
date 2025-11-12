@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>NeizhmakLab07-3 — Замовлення товару</title>
+<style>
+    body {
+        background-color: #f6eaff;
+        font-family: Arial, sans-serif;
+    }
+    fieldset {
+        width: 600px;
+        background-color: #f3e0ff;
+        border: 2px solid #a35cff;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    legend {
+        font-size: 22px;
+        font-weight: bold;
+        color: #8000ff;
+    }
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #4b0082;
+    }
+    input, select, textarea {
+        width: 98%;
+        padding: 5px;
+        border: 1px solid #a35cff;
+        border-radius: 4px;
+        background-color: #fdf9ff;
+    }
+    input[type="submit"], input[type="reset"] {
+        width: auto;
+        margin-top: 10px;
+        background-color: #cda8ff;
+        border: 1px solid #7b33cc;
+        color: #3b0066;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 6px 10px;
+    }
+</style>
+</head>
+<body>
+
+<form action="accepted.html" method="post" target="_blank">
+<fieldset>
+    <legend>Форма замовлення товару</legend>
+
+    <label>Номер банківського рахунку:</label>
+    <input type="text" name="account" maxlength="20">
+
+    <label>Особистий номер користувача:</label>
+    <input type="text" name="user_id" maxlength="20">
+
+    <label>Виберіть товари (можна декілька):</label>
+    <select name="products" size="5" multiple>
+        <option value="laptop">Ноутбук</option>
+        <option value="smartphone">Смартфон</option>
+        <option value="tablet">Планшет</option>
+        <option value="printer">Принтер</option>
+        <option value="monitor">Монітор</option>
+    </select>
+
+    <label>Коментар користувача:</label>
+    <textarea name="comment" rows="4"></textarea>
+
+    <label>Вид оплати:</label>
+    <input type="radio" name="payment" value="cash"> Готівковий
+    <input type="radio" name="payment" value="nocash"> Безготівковий
+
+    <label>Яку додаткову інформацію бажаєте отримати?</label>
+    <input type="checkbox" name="balance" value="yes"> Дані про залишки на рахунку<br>
+    <input type="checkbox" name="payments" value="yes"> Список останніх виплат по рахунку
+
+    <div style="text-align:center;">
+        <input type="reset" value="Очистити форму">
+        <input type="submit" value="Відправити замовлення">
+    </div>
+</fieldset>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8" />
+<title>NeizmakLab06-4 — Навігаційна карта</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<style>
+  :root{ --bg:#faf5ff; --accent:#6b4ecf; --card:#e8ddff; --muted:#4a3a66; }
+  body{
+    margin:0; font-family:"Segoe UI",Arial,sans-serif; background:var(--bg);
+    display:flex; align-items:center; justify-content:center; min-height:100vh; color:var(--muted);
+    padding:28px;
+  }
+  .canvas{
+    width:92%;
+    max-width:960px;
+    background:linear-gradient(180deg,var(--card),#dcd2ff);
+    border-radius:14px;
+    padding:26px;
+    box-shadow:0 10px 26px rgba(80,60,120,0.08);
+    border:1px solid rgba(120,90,240,0.1);
+  }
+  h1{ color:var(--accent); text-align:center; margin:0 0 12px; }
+  p.lead{ text-align:center; margin:0 0 20px; color:#56466f; }
+
+  .svgwrap{ display:flex; justify-content:center; }
+  svg{ max-width:100%; height:auto; display:block; }
+  .shape{ transition:transform .18s ease, filter .18s ease; cursor:pointer; }
+  .shape:hover{ transform:translateY(-6px); filter:drop-shadow(0 8px 18px rgba(80,60,180,0.15)); }
+  .label{ font-size:14px; fill:#fff; pointer-events:none; font-weight:600; font-family:"Segoe UI", Arial, sans-serif }
+
+  .note{ margin-top:16px; text-align:center; font-size:13px; color:#5b4b78; }
+  nav{ text-align:center; margin-top:18px; }
+  nav a{ text-decoration:none; color:var(--accent); padding:8px 12px; border-radius:8px; }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <h1>Навігаційна карта</h1>
+    <p class="lead">Натисни на фігури, щоб перейти до відповідної сторінки</p>
+
+    <div class="svgwrap" aria-hidden="false">
+      
+      <svg viewBox="0 0 900 420" role="img" aria-label="Навігаційна карта">
+       
+        <a href="Task1.html">
+          <polygon class="shape" points="60,360 360,40 660,360" fill="#5a3fd0" opacity="0.95"/>
+          <text x="360" y="220" class="label" text-anchor="middle">Моя Батьківщина</text>
+        </a>
+        <a href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B2%D0%B5%D1%80%D1%96%D0%B2%D0%BA%D0%B0_(%D1%81%D0%B5%D0%BB%D0%BE)" target="_blank" rel="noopener">
+          <circle class="shape" cx="760" cy="80" r="60" fill="#3fb1d6" />
+          <text x="760" y="86" class="label" text-anchor="middle">Посилання</text>
+        </a>
+        <a href="Task3.html">
+          <rect class="shape" x="40" y="20" width="220" height="80" rx="12" fill="#2e9b7a" />
+          <text x="150" y="70" class="label" text-anchor="middle">Мої друзі</text>
+        </a>
+        <a href="Task2.html">
+          <rect class="shape" x="700" y="300" width="160" height="90" rx="12" fill="#b86bd6" />
+          <text x="780" y="350" class="label" text-anchor="middle">Сенсорна мапа</text>
+        </a>
+      </svg>
+    </div>
+    <nav>
+      <a href="Task1.html">→ Моя Батьківщина</a> |
+      <a href="Task3.html">→ Мої друзі</a>
+    </nav>
+  </div>
+</body>
+</html>

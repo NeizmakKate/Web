@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8" />
+<title>NeizhmakLab06-3 — Моя Батьківщина</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<style>
+  :root{
+    --bg:#faf5ff;
+    --card1:#e8ddff;
+    --accent:#6b4ecf;
+    --muted:#5b4b78;
+  }
+  body{
+    margin:0;
+    font-family:"Segoe UI", Arial, sans-serif;
+    background:var(--bg);
+    color:var(--muted);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:28px;
+  }
+  header{ text-align:center; margin-bottom:18px;}
+  h1{ margin:6px 0; color:var(--accent); }
+  .wrap{
+    width:90%;
+    max-width:920px;
+    display:grid;
+    grid-template-columns: 1fr 360px;
+    gap:24px;
+    align-items:start;
+  }
+  .card{
+    background:linear-gradient(180deg,var(--card1),#dcd2ff);
+    border-radius:12px;
+    padding:18px;
+    box-shadow:0 6px 18px rgba(80,60,120,0.08);
+    border:1px solid rgba(130,100,240,0.12);
+    overflow:hidden;
+  }
+
+  .info { order:1; }
+  .images {
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:12px;
+  }
+  .thumb{
+    position:relative;
+    width:calc(50% - 6px);
+    min-width:120px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 8px 18px rgba(0,0,0,0.06);
+    transform-origin:center;
+    transition:transform .28s ease, box-shadow .28s ease;
+  }
+  .thumb img{ display:block; width:100%; height:150px; object-fit:cover; }
+
+  .thumb:hover{ transform:translateY(-6px) scale(1.02); box-shadow:0 12px 28px rgba(0,0,0,0.12); }
+
+  .meta {
+    font-size:15px;
+    line-height:1.5;
+  }
+  .links { margin-top:12px; }
+  .btn {
+    display:inline-block;
+    text-decoration:none;
+    background:var(--accent);
+    color:#fff;
+    padding:8px 12px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(107,78,207,0.18);
+    margin-right:8px;
+  }
+
+  
+  .side {
+    position:relative;
+    height:100%;
+  }
+  .side h3{ margin:6px 0; color:#2e1e55; }
+  .side p{ font-size:14px; color:#3b3150; }
+
+  nav.toplinks{
+    width:90%;
+    max-width:920px;
+    margin:12px 0 26px;
+    display:flex;
+    gap:10px;
+  }
+  nav.toplinks a{
+    text-decoration:none;
+    color:var(--accent);
+    padding:8px 12px;
+    border-radius:8px;
+    background:transparent;
+    border:1px solid transparent;
+  }
+  nav.toplinks a:hover{ background:rgba(107,78,207,0.06); border-color:rgba(107,78,207,0.12); }
+
+  footer{ margin-top:28px; font-size:13px; color:#6b5f7e; }
+
+  
+  @media (max-width:880px){
+    .wrap{ grid-template-columns: 1fr; }
+    .thumb img{ height:140px; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Моя Батьківщина — Таверівка</h1>
+    <div style="color:#6b5f7e">Неїжмак Катерина Олексіївна — Полтавська політехніка, 303-Тн, комп’ютерні науки</div>
+  </header>
+
+  <nav class="toplinks">
+    <a href="Task.html">Навігаційна карта</a>
+    <a href="Task2.html">Сенсорна мапа</a>
+    <a href="Task3.html">Мої друзі</a>
+  </nav>
+
+  <main class="wrap">
+    <section class="card info">
+      <h2 style="color:var(--accent);margin-top:0">Коротко про Таверівку</h2>
+      <p class="meta">
+        Таверівка — село в Полтавській області. Нижче — кілька світлин села та короткий опис. За додатковою інформацією можна перейти на сторінку Вікіпедії.
+      </p>
+
+      <div class="images" aria-hidden="false">
+        <figure class="thumb">
+          <img src="1.jpg" alt="Таверівка — фото 1">
+        </figure>
+        <figure class="thumb">
+          <img src="2.jpg" alt="Таверівка — фото 2">
+        </figure>
+        <figure class="thumb" style="width:100%">
+          <img src="3.jpg" alt="Таверівка — фото 3">
+        </figure>
+      </div>
+
+      <div class="links">
+        <a class="btn" href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B2%D0%B5%D1%80%D1%96%D0%B2%D0%BA%D0%B0_(%D1%81%D0%B5%D0%BB%D0%BE)" target="_blank" rel="noopener">Сторінка Вікіпедії про Таверівку</a>
+       
+      </div>
+    </section>
+
+    <aside class="card side">
+      <h3>Детальніше</h3>
+      <p>На схилах річки Коломак здавна розташовувались села і хутори, які в той час називалися Василівкою, Єгорівкою, Єленівкою. Розташовувалися вони за сім кілометрів від селища Чутове.
+
+У хуторі Василівка (нині Таверівка) налічувалось не більше десяти хат. На фермі був один сарай і вівчарня. Це була невелика економія поміщиці Дурнової. Місцевого населення в ній було мало, тому сюди на роботу приходили люди з навколишніх сіл і з інших місць.
+
+Працювати доводилося зранку і до пізнього вечора, роботи виконувалися вручну. На всю економію був один тракторець, пара плугів, молотарка і два паровики. Умови життя людей були погані. Робітники жили в бараках, погано харчувалися, часто хворіли.
+
+Особливо багато заробітчан у Василівці було із бідних і посушливих земель Таврії. Селяни з півдня, щоб якось вижити, змушені були приїжджати на заробітки у поміщицькі економії на північ країни. У Василівці їх щороку було по 600—800 чоловік. Це були сезонні робітники. Вони займалися вирощуванням цукрових буряків. Людей-заробітчан тут називали тавричанами. Тому пізніше, коли вони вже й не приїжджали на сезонні роботи, хутір Василівка в пам'ять про заробітчан із Таврії стали називати Таверівкою. .</p>
+      <p style="margin-top:14px;font-size:13px;color:#4e3f6a">Контакт: <strong>Неїжмак К.</strong></p>
+    </aside>
+  </main>
+
+
+</body>
+</html>

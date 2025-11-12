@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна №4. Горизонтальні рядки</title>
+    <meta name="description" content="Лабораторна робота №4. Горизонтальний рух тексту.">
+    <meta name="keywords" content="HTML, анімація, marquee, ЛР4">
+    <style>
+        body {
+            background-color: #faf5ff;
+            color: #4b2e2e;
+            font-family: "Segoe UI", Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .row {
+            margin: 15px 0;
+            padding: 10px;
+            background: #e8ddff;
+            border-radius: 8px;
+            border: 1px solid #c3b0ff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Лабораторна №4</h1>
+    <h2>Горизонтальні рухомі рядки</h2>
+
+    <!-- 1. Коливається з боку в бік -->
+    <div class="row">
+        <marquee behavior="alternate" scrollamount="5">Привіт</marquee>
+    </div>
+
+    <!-- 2. Біжить справа наліво і повторюється -->
+    <div class="row">
+        <marquee direction="left" scrollamount="7">Оголошення про цікаві новинки</marquee>
+    </div>
+
+    <!-- 3. Біжить зліва направо і зупиняється -->
+    <div class="row">
+        <marquee direction="right" scrollamount="8" behavior="slide">Знижки до -50% в магазині MobiStyle</marquee>
+    </div>
+
+    <!-- 4. Два рядки з різним запізненням -->
+    <div class="row">
+        <marquee scrollamount="3" scrolldelay="120">Майже на всі свята</marquee>
+    </div>
+
+    <div class="row">
+        <marquee scrollamount="6" scrolldelay="20">Або якщо ви маєте віп карту</marquee>
+    </div>
+
+    <div class="signature">
+        Студентка групи 303-ТН <b>Неїжмак К.О.</b>
+    </div>
+</body>
+
+</html>

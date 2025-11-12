@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна №1. Сторінка про себе</title>
+    <meta name="description" content="Лабораторна робота №1. Веб-сторінка з інформацією про себе та хобі.">
+    <meta name="keywords" content="HTML, лабораторна робота, студент, хобі, програмування">
+    <style>
+        body {
+            background-color: #faf5ff;
+            color: #4b2e2e;
+            font-family: "Segoe UI", Arial, sans-serif;
+            text-align: justify;
+            margin: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #5d3a8d;
+        }
+
+        p {
+            font-size: large;
+        }
+
+        a {
+            font-weight: bold;
+            color: #5d3a8d;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #7b5cbf;
+        }
+
+        .signature {
+            margin-top: 40px;
+            font-style: italic;
+            text-align: right;
+            color: #4b2e2e;
+        }
+
+        pre {
+            background: #f0e6f9;
+            padding: 10px;
+            border-radius: 8px;
+            font-family: "Courier New", monospace;
+            border: 1px solid #d1b3ff;
+            color: #4b2e2e;
+        }
+
+        .task {
+            color: #5d3a8d;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Про себе</h1>
+    <p>
+        Мене звати <b><u>Катя</u></b>, навчаюся на <i>3 курсі</i> в універсететі. 
+        Зараз я не тільки ходжу на навчання, а також працюю. 
+        Маю багато різних <b><i>хобі</i></b>. 
+        З дебільшого полюбляю займатися <u>спортом</u>.
+    </p>
+
+    <h1>Моє хобі</h1>
+    <p>
+        Найбільше мені подобається <b>активний відпочинок</b>, 
+        тому як тільки у мене з'являється час я ходжу на тренування по <u>волейболу</u>, 
+        а також полюбляю грати в <i><b>настільний теніс</b></i>. 
+        Раніше професіонально займалася <u>спортивно-бальними танцями</u>.
+    </p>
+
+    <h2>Програмування</h2>
+    <pre>
+    # Обчислення факторіала числа у Python
+    def factorial(n):
+        if n == 0 or n == 1:
+            return 1
+        else:
+            return n * factorial(n - 1)
+
+    print(factorial(5))  # Виведе 120
+    </pre>
+
+    <p>
+        <a href="Lab5_Neizhmak05-3.html">Мої гіперпосилання</a>
+    </p>
+
+    <div class="signature">
+        Студентка групи 303-ТН <b><u>Неїжмак К.О.</u></b>
+    </div>
+
+    <p class="signature">
+        Моя електронна адреса: 
+        <a href="mailto:zh2005uk@gmail.com">zh2005uk@gmail.com</a>
+    </p>
+
+</body>
+</html>
