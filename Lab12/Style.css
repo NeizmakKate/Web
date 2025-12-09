@@ -6,18 +6,20 @@ body {
 
 body {
     font-family: Arial, sans-serif;
-    background: #f5f7fa;
+    background: #f4f0ff; 
     display: flex;
     flex-direction: column;
 }
 
+
+
 .header {
-    background: #3ba4ff;
+    background: #7b42f6; 
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid #ff4b4b;
+    border-bottom: 3px solid #a974ff; 
 }
 
 .header-left {
@@ -44,29 +46,31 @@ body {
     text-decoration: underline;
 }
 
+
+
 .main-content {
     flex: 1;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 30px 0;
 }
 
 .reg-form {
     width: 40%;
-    background: white;
+    background: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(123, 66, 246, 0.2); 
 }
 
 .page-title {
     text-align: center;
-    color: #333;
+    color: #6224d7; 
     margin-bottom: 15px;
 }
+
+
 
 .form-group {
     margin-bottom: 15px;
@@ -76,28 +80,31 @@ label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #444;
+    color: #4a2c7f; 
 }
 
 input,
 select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #bda7ff; 
     border-radius: 6px;
     font-size: 14px;
+    background: #faf8ff;
 }
 
 input:focus,
 select:focus {
-    border-color: #007bff;
+    border-color: #7b42f6;
     outline: none;
 }
+
+
 
 .submit-btn {
     width: 100%;
     padding: 12px;
-    background: #007bff;
+    background: #7b42f6;
     border: none;
     border-radius: 6px;
     color: white;
@@ -106,13 +113,15 @@ select:focus {
 }
 
 .submit-btn:hover {
-    background: #0056b3;
+    background: #6224d7;
 }
+
+
 
 .footer {
     text-align: center;
     padding: 15px;
-    background: #1e2a34;
+    background: #4a2c7f; 
     color: white;
     font-size: 14px;
 }
