@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="/css/lab12/task_1.12.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <h2 class="blog-title">Мій особистий блог</h2>
+            <span class="author">Неїжмак Катя</span>
+        </div>
+
+        <nav class="header-right">
+            <a href="#" class="nav-link">Вхід</a>
+            <a href="/lab7/PysarenkoLab7-1.html" class="nav-link">Реєстрація</a>
+        </nav>
+    </header>
+    <h1>Реєстрація</h1>
+    <div class="main-content">
+        <form action="#" method="get" class="reg-form">
+            <h1 class="page-title">Реєстрація</h1>
+            <div class="form-group">
+                <label for="first_name">Ім'я</label>
+                <input type="text" id="first_name" required>
+            </div>
+            <div class="form-group">
+                <label for="last_name">Прізвище</label>
+                <input type="text" id="last_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="group">Навчальна група</label>
+                <select id="group" required>
+                    <option value="" disabled selected>Оберіть групу</option>
+                    <option value="301">301</option>
+                    <option value="302">302</option>
+                    <option value="303">303</option>
+                    <option value="304">304</option>
+                    <option value="305">305</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Підтвердження паролю</label>
+                <input type="password" id="confirm_password" required>
+            </div>
+            <button type="submit" class="submit-btn">Зареєструватися</button>
+        </form>
+    </div>
+    <footer class="footer">
+        © Всі права захищено.
+    </footer>
+</body>
+
+</html>
