@@ -1,0 +1,118 @@
+.header-row > div,
+.content-row > div,
+.footer-row > div {
+    border: 1px solid #d3c5ff; 
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+
+@media (min-width: 1200px) {
+    .left-header {
+        background-color: #a97bff !important; 
+        color: white !important;
+        font-weight: bold !important;
+    }
+
+    .right-header {
+        color: #7b42f6 !important; 
+        font-weight: bold !important;
+    }
+
+    .left-footer {
+        color: #4a2c7f !important; 
+    }
+
+    .right-footer {
+        background-color: #a97bff !important;
+        color: white !important;
+        font-weight: bold !important;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .right-header {
+        background-color: #e9ddff !important; 
+        font-size: 1.25rem !important;
+        font-weight: 700 !important;
+        min-height: 100px !important;
+        color: #4a2c7f !important;
+    }
+
+    .main-content {
+        background-color: #e9ddff !important;
+        font-weight: 700 !important;
+        color: #4a2c7f !important;
+        min-height: 260px !important;
+    }
+
+    .left-footer {
+        background-color: #e9ddff !important;
+        font-size: 1.15rem !important;
+        min-height: 90px !important;
+        font-weight: 700 !important;
+        color: #4a2c7f !important;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .right-header {
+        font-size: 1.2em !important;
+        font-weight: bold !important;
+        color: #5326c3 !important;
+    }
+
+    .left-menu,
+    .right-menu {
+        background-color: #f4e8ff !important; 
+        color: #3d1b8a !important;
+        min-height: 60px !important;
+    }
+
+    .main-content {
+        font-size: 1.2em !important;
+        font-weight: bold !important;
+        min-height: 300px !important;
+        color: #3d1b8a !important;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .header-row > div,
+    .content-row > div,
+    .footer-row > div {
+        color: #7b42f6 !important; 
+        margin-bottom: -1px !important;
+    }
+
+    .main-content {
+        min-height: 260px !important;
+    }
+
+    .left-menu,
+    .right-menu {
+        min-height: 60px !important;
+    }
+}
+
+
+.container-fluid {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-row {
+    flex: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
