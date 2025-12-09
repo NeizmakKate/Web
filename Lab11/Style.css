@@ -1,0 +1,140 @@
+
+body {
+    background: #d6c3e0;
+    
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    font-size: 18px;
+    color: #2a2344; 
+}
+
+
+p {
+    text-indent: 40px;       
+    text-align: justify;     
+    margin: 20px 60px;       
+}
+
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    color: #7b3fa1;         
+    font-style: normal;
+    font-size: 38px;
+    margin-top: 30px;
+}
+
+
+h2, h3 {
+    color: #5d2d73;
+    font-style: normal;
+}
+
+
+img.left {
+    float: left;
+    margin: 10px 20px 10px 60px;
+    width: 260px;
+}
+
+img.right {
+    float: right;
+    margin: 10px 60px 10px 20px;
+    width: 260px;
+}
+
+img.center {
+    display: block;
+    margin: 20px auto;
+    width: 70%;
+}
+
+
+a:link {
+    color: #a659d1;   
+    text-decoration: none;
+}
+
+a:visited {
+    color: #5d2d73;   
+}
+
+a:hover {
+    color: #d78aff;   
+    text-decoration: underline;
+}
+
+a:active {
+    color: #b300ff;   
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 22px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.gallery figure {
+  margin: 0;
+  background: rgba(255,255,255,0.65);
+  border: 1px solid rgba(180,150,200,0.6);
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: 230px;        
+  object-fit: cover;    
+  display: block;
+  border-radius: 4px;
+}
+
+
+.gallery figcaption {
+  margin-top: 8px;
+  font-style: italic;
+  color: #4b2b5b;  
+}
+
+/* адаптивність */
+@media (max-width: 950px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery img { height: 220px; }
+}
+
+@media (max-width: 500px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    padding: 0 12px;
+  }
+  .gallery img { height: 200px; }
+}
+
+/* заголовок сторінки (фіолетова тема, якщо ще не маєш) */
+h1 {
+  text-align: center;
+  color: #7b3fa1;
+  font-size: 36px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.lead {
+  max-width: 1000px;
+  margin: 6px auto 24px auto;
+  text-align: center;
+  color: #3b2340;
+  font-style: italic;
+}

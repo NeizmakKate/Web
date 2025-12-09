@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Макет на всю сторінку</title>
+
+<style>
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+.wrapper{
+    width:100vw;
+    height:100vh;
+    display:grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 150px 120px 1fr 150px;
+}
+
+.p1{ background:#5A189A; }
+.p2{ background:#7B2CBF; }
+.p3{ background:#9D4EDD; }
+.p4{ background:#C77DFF; }
+.p5{ background:#E0AAFF; }
+.p6{ background:#3C096C; }
+.p7{ background:#240046; }
+
+.block{
+    width:100%;
+    height:100%;
+}
+
+
+.header{
+    grid-column:1 / 3;
+    grid-row:1;
+}
+.side{
+    grid-column:3;
+    grid-row:1 / 4;
+}
+
+.cyan{
+    grid-column:1;
+    grid-row:2;
+}
+
+.red{
+    grid-column:2;
+    grid-row:2;
+}
+
+.yellow{
+    grid-column:3;
+    grid-row:2 / 4;
+}
+
+.green{
+    grid-column:1 / 3;
+    grid-row:3;
+}
+
+.footer{
+    grid-column:1 / 4;
+    grid-row:4;
+}
+
+
+@media(max-width:600px){
+    .wrapper{
+        grid-template-columns:1fr;
+        grid-template-rows:auto;
+        height:auto;
+    }
+    .block{
+        grid-column:1 !important;
+        grid-row:auto !important;
+        height:120px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="block p1 header"></div>
+    <div class="block p2 side"></div>
+
+    <div class="block p3 cyan"></div>
+    <div class="block p4 red"></div>
+    <div class="block p5 yellow"></div>
+
+    <div class="block p6 green"></div>
+
+    <div class="block p7 footer"></div>
+
+</div>
+
+</body>
+</html>
