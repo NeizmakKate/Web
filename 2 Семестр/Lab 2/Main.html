@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛБ2 по JS</title>
+   <style>
+    :root {
+        --bg-color: #f5efe6;          /* світло-бежевий фон */
+        --card-bg: #fffaf3;           /* кремовий */
+        --accent-color: #8b5e3c;      /* коричневий акцент */
+        --text-color: #3e2c23;        /* темно-коричневий текст */
+    }
+
+    body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #f5efe6, #e8d8c3);
+        color: var(--text-color);
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 1500px;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    h1 {
+        text-align: center;
+        color: #6b4226;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .task-card {
+        background-color: var(--card-bg);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 15px rgba(90, 60, 30, 0.15);
+        border-left: 6px solid var(--accent-color);
+        transition: transform 0.2s;
+    }
+
+    .task-card:hover {
+        transform: translateY(-3px);
+    }
+
+    .task-card h2 {
+        margin-top: 0;
+        font-size: 1.2rem;
+        color: #5a3825;
+    }
+
+    .img_holder {
+        display: flex;
+    }
+
+    .img_holder img {
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        transition: transform 0.3s;
+    }
+
+    .img_holder img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .task-card p {
+        font-size: 0.95rem;
+        color: #7a5a45;
+    }
+
+    .task-card a {
+        font-size: 1.5rem;
+        margin: 0 20px;
+        color: #8b5e3c;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .task-card a:hover {
+        color: #5a3825;
+    }
+
+    button {
+        background-color: var(--accent-color);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.3s;
+    }
+
+    button:hover {
+        background-color: #5a3825;
+        transform: scale(1.05);
+    }
+
+    .num-p {
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #6b4226;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+        border: 2px solid #6b4226;
+        margin: 10px;
+        display: inline-block;
+        cursor: pointer;
+        background-color: #d2b48c;
+        transition: background 0.3s;
+    }
+
+    .result-area {
+        margin-top: 15px;
+        padding: 10px;
+        background: #fff4e6;
+        border: 1px dashed #a67c52;
+        min-height: 20px;
+        font-family: monospace;
+        white-space: pre-wrap;
+        border-radius: 6px;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Лабораторна робота 2. Обробка подій в JS</h1>
+
+        <div class="task-card">
+            <h2>Завдання 1. Ширина картинок</h2>
+            <div class="img_holder">
+                <img src="img/lab2_pic.png" id="cat">
+<img src="img/lab2_pic_dog.jpeg" id="dog">
+<img src="img/lab2_pic.jpg" id="han">
+            </div>
+            <div id="res-1" class="result-area">Тут буде результат...</div>
+        </div>
+        <div class="task-card">
+            <h2>Завдання 2. Посилання</h2>
+            <a href="https://www.google.com/" class="links">Google</a>
+            <a href="https://www.youtube.com" class="links">YouTube</a>
+            <a href="https://www.instagram.com" class="links">Instagram</a>
+        </div>
+
+        <div class="task-card">
+            <h2>Завдання 3. Запис значення з input</h2>
+            <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+                <input type="text" class="another_task">
+                <input type="text" class="another_task">
+                <input type="text" class="another_task">
+            </div>
+            <p id="demo">Тут з'явиться текст після кліку</p>
+        </div>
+
+        <div class="task-card">
+            <h2>Завдання 4. Запис значення input в console.log або alert</h2>
+            <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+                <input type="text" class="task">
+                <input type="text" class="task">
+                <input type="text" class="task">
+            </div>
+            <p id="warning"></p>
+        </div>
+
+        <div class="task-card">
+            <h2>Завдання 5. Отримання квадрату числа</h2>
+            <p class="num-p">двісті тридцять п'ять тисяч</p>
+            <p class="num-p">П'ятсот ДваНадцять </p>
+            <p class="num-p">25</p>
+        </div>
+        <div class="task-card">
+            <h2>Завдання 6. Чергування кольору</h2>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+   <script src="lab.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/numbro@2.3.6/dist/numbro.min.js"></script>
+</body>
+
+</html>

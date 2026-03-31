@@ -105,7 +105,7 @@ a:active {
   color: #4b2b5b;  
 }
 
-/* адаптивність */
+
 @media (max-width: 950px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
@@ -121,7 +121,7 @@ a:active {
   .gallery img { height: 200px; }
 }
 
-/* заголовок сторінки (фіолетова тема, якщо ще не маєш) */
+
 h1 {
   text-align: center;
   color: #7b3fa1;
