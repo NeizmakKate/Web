@@ -1,0 +1,16 @@
+{
+  "name": "square-ajax-app",
+  "version": "1.0.0",
+  "description": "Односторінковий додаток для обчислення квадрата числа через AJAX",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.22.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
