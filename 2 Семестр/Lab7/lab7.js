@@ -1,5 +1,5 @@
 (function() {
-    // ----- Стилізація сторінки -----
+  
     const body = document.body;
     body.style.margin = "0";
     body.style.padding = "20px";
@@ -17,7 +17,7 @@
     container.style.gap = "30px";
     container.style.justifyContent = "center";
 
-    // ----- Функція створення картки -----
+    
     function createTaskCard(title, contentGenerator) {
         const card = document.createElement("div");
         card.style.background = "rgba(245, 222, 179, 0.9)";
@@ -45,7 +45,7 @@
         return card;
     }
 
-    // ================= ЗАВДАННЯ 1: Поточний час у форматі =================
+
     function buildTask1(containerDiv) {
         const desc = document.createElement("p");
         desc.textContent = "Натисніть кнопку, щоб отримати поточний час у форматі: 09:15:56, середа, 06 травня 2025 року.";
@@ -103,7 +103,7 @@
         containerDiv.appendChild(resultDiv);
     }
 
-    // ================= ЗАВДАННЯ 2: Гра "Вгадай число" =================
+   
     function buildTask2(containerDiv) {
         const desc = document.createElement("p");
         desc.textContent = "Комп'ютер загадує число від 0 до 50. Ви вгадуєте. Підказки: гаряче (≤5), тепло (6‑15), холодно (≥16).";
@@ -136,7 +136,7 @@
         logDiv.style.overflowY = "auto";
         logDiv.textContent = "Лог спроб (останні події):";
 
-        // Допоміжна функція форматування дати/часу для консолі
+       
         function formatDateTime() {
             const now = new Date();
             const day = String(now.getDate()).padStart(2, '0');

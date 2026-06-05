@@ -91,7 +91,7 @@
             btn.classList.add('loading');
             
             try {
-                // AJAX-запит (Fetch API) на сервер
+                // AJAX-запит сервер
                 const response = await fetch('/api/square', {
                     method: 'POST',
                     headers: {
@@ -106,7 +106,7 @@
                 }
 
                 const data = await response.json();
-                // data = { number: x, square: x*x }
+                
                 resultBlock.textContent = `✅ Квадрат числа ${data.number} = ${data.square}`;
                 resultBlock.classList.remove('error');
             } catch (error) {
@@ -134,7 +134,7 @@
             sendRequest(num);
         });
 
-        // Додатково: натискання Enter в полі вводу
+        
         inputEl.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
                 btn.click();

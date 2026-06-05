@@ -90,7 +90,7 @@
         return card;
     }
 
-    // Завдання 1
+    
     const task1 = createCard(
         "1. Залишок від ділення на 60",
         "Функція seconds(total) = total % 60",
@@ -115,7 +115,7 @@
     );
     container.appendChild(task1);
 
-    // Завдання 2
+    
     const task2 = createCard(
         "2. Периметр многокутника",
         "P = side * count",
@@ -152,7 +152,7 @@
     );
     container.appendChild(task2);
 
-    // Завдання 3
+    
     const task3 = createCard(
         "3. FizzBuzz",
         "Виводить числа від 1 до n (кратні 3→fizz, 5→buzz, 3&5→fizzbuzz)",
@@ -185,7 +185,7 @@
     );
     container.appendChild(task3);
 
-    // Завдання 4
+    
     const task4 = createCard(
         "4. Середнє арифметичне трьох чисел",
         "Calculate(a,b,c) = (a+b+c)/3",
@@ -216,7 +216,7 @@
     );
     container.appendChild(task4);
 
-    // Завдання 5
+    
     const task5 = createCard(
         "5. Перевірка подільності n на x та y",
         "Три способи: if, тернарний, логічний",
@@ -245,7 +245,7 @@
     );
     container.appendChild(task5);
 
-    // Завдання 6
+    
     const task6 = createCard(
         "6. Аналіз масиву (мінімум, максимум, сума, середнє, непарні)",
         "Створюється масив випадкових цілих чисел",
@@ -276,7 +276,7 @@
     );
     container.appendChild(task6);
 
-    // Завдання 7
+    
     const task7 = createCard(
         "7. Двовимірний масив 5x5, головна діагональ",
         "Від'ємні на 0, додатні на 1",
@@ -295,7 +295,7 @@
     );
     container.appendChild(task7);
 
-    // Завдання 8
+    
     const task8 = createCard(
         "8. Арифметичні операції",
         "Виберіть операцію: +, -, ×, ÷ (перевірка на 0)",
@@ -337,7 +337,7 @@
     );
     container.appendChild(task8);
 
-    // Завдання 9
+    
     const task9 = createCard(
         "9. Аналіз числа",
         "Визначає: знак, просте, ділення на 2,3,5,6,9",
@@ -374,7 +374,7 @@
     );
     container.appendChild(task9);
 
-    // Завдання 10
+    
     const task10 = createCard(
         "10. Перевернутий масив та квадрати чисел",
         "Введіть масив через кому (наприклад: 2, cat, 4, 6, text)",

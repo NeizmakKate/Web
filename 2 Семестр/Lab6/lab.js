@@ -235,7 +235,9 @@
         containerDiv.appendChild(info);
     }
 
-    // ========================= ЗАВДАННЯ 2: Електромережа (ООП) =========================
+    
+
+    
     function buildTask2(containerDiv) {
         const desc = document.createElement("p");
         desc.textContent = "Розрахунок балансу електроенергії для заданої мережі (день/ніч). Визначення необхідної купівлі або продажу та вартості.";
@@ -361,13 +363,13 @@
         updateResult();
     }
 
-    // Створюємо картки
+  
     const task1Card = createTaskCard("Завдання 1: Модульне вікно (мова → день тижня)", buildTask1);
     const task2Card = createTaskCard("Завдання 2: Електромережа (ООП, баланс день/ніч)", buildTask2);
     container.appendChild(task1Card);
     container.appendChild(task2Card);
 
-    // Адаптивність
+    
     function adaptLayout() {
         const width = window.innerWidth;
         if (width <= 720) {
