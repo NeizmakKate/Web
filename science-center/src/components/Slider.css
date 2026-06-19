@@ -1,0 +1,142 @@
+.slider {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease;
+  transform: scale(1.03);
+  animation: sliderZoom 5.5s ease-out forwards;
+}
+
+@keyframes sliderZoom {
+  from { transform: scale(1.03); }
+  to { transform: scale(1); }
+}
+
+.slider__bg--fade {
+  opacity: 0;
+}
+
+.slider__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(10, 22, 40, 0.82) 0%,
+    rgba(10, 22, 40, 0.55) 55%,
+    rgba(10, 22, 40, 0.2) 100%
+  );
+}
+
+.slider__content {
+  position: relative;
+  z-index: 2;
+}
+
+.slider__text {
+  max-width: 600px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.slider__text--fade {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.slider__title {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 6vw, 68px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.08;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+
+.slider__desc {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.65;
+  margin-bottom: 36px;
+  max-width: 480px;
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.slider__arrow {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  padding: 8px;
+  transition: color var(--transition);
+  line-height: 1;
+}
+
+.slider__arrow:hover {
+  color: var(--gold);
+}
+
+.slider__dots {
+  display: flex;
+  gap: 8px;
+}
+
+.slider__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: background var(--transition), transform var(--transition);
+}
+
+.slider__dot--active {
+  background: var(--gold);
+  transform: scale(1.3);
+}
+
+.slider__progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 3;
+}
+
+.slider__progress-bar {
+  height: 100%;
+  background: var(--gold);
+  animation: progress linear;
+}
+
+@keyframes progress {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    min-height: 520px;
+  }
+  .slider__desc {
+    font-size: 15px;
+  }
+}
